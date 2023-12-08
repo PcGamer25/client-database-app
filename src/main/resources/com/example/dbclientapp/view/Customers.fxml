@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.dbclientapp.controller.CustomersController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Customers">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="customersTable" layoutX="14.0" layoutY="31.0" prefHeight="320.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="customersIdColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="customersNameColumn" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="customersPhoneColumn" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="customersDivisionColumn" prefWidth="75.0" text="Division ID" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="233.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchToAddCustomer" text="Add" />
+      <Button layoutX="328.0" layoutY="360.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchToDirectory" text="Back" />
+      <Button layoutX="281.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchToEditCustomer" text="Edit" />
+   </children>
+</AnchorPane>

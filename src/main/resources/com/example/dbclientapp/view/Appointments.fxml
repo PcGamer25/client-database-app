@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.dbclientapp.controller.AppointmentsController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Appointments">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="appointmentsTable" layoutX="14.0" layoutY="31.0" prefHeight="320.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="appointmentsIdColumn" prefWidth="35.0" text="ID" />
+          <TableColumn fx:id="appointmentsTitleColumn" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="appointmentsDescriptionColumn" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="appointmentsLocationColumn" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="appointmentsContactColumn" prefWidth="75.0" text="Contact" />
+            <TableColumn fx:id="appointmentsTypeColumn" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="appointmentsStartColumn" prefWidth="150.0" text="Start" />
+            <TableColumn fx:id="appointmentsEndColumn" prefWidth="150.0" text="End" />
+            <TableColumn fx:id="appointmentsCustomerIdColumn" prefWidth="75.0" text="Customer ID" />
+            <TableColumn fx:id="appointmentsUserIdColumn" prefWidth="75.0" text="User ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="233.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchToAddAppointment" text="Add" />
+      <Button layoutX="328.0" layoutY="360.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchToDirectory" text="Back" />
+      <Button layoutX="281.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchToEditAppointment" text="Edit" />
+      <FlowPane alignment="CENTER_RIGHT" layoutX="104.0" layoutY="5.0" prefHeight="25.0" prefWidth="480.0">
+         <children>
+            <RadioButton mnemonicParsing="false" onAction="#selectAllTimeframe" selected="true" text="All">
+               <toggleGroup>
+                  <ToggleGroup fx:id="timeframe" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#selectWeekTimeframe" text="This Week" toggleGroup="$timeframe">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#selectMonthTimeframe" text="This Month" toggleGroup="$timeframe">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </RadioButton>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>
