@@ -1,0 +1,6 @@
+module:com.example.dbclientapp
+com.example.dbclientapp.controller
+com.example.dbclientapp.dao
+com.example.dbclientapp.helper
+com.example.dbclientapp.main
+com.example.dbclientapp.model
