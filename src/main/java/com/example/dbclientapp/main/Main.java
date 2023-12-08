@@ -24,6 +24,7 @@ public class Main extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("/com/example/dbclientapp/view/Login.fxml"));
 
+        stage.setTitle("Appointment Scheduler");
         stage.setScene(new Scene(root));
         stage.setResizable(false);
         stage.show();
