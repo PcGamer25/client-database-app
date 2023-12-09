@@ -1,5 +1,5 @@
 # Client Database App
-The client-database-app is an appointment scheduling program that manages appointments, customers, and generates reports. It is to be connected to a MySQL database through the Java Database Connectivity API where customer and appointment data is stored.
+The client-database-app is an appointment scheduling program built using JavaFX that manages appointments, customers, and generates reports. It is to be connected to a MySQL database through the Java Database Connectivity API where customer and appointment data is stored.
 ## Features
 ### Login Form
 <img width="452" alt="login" src="https://github.com/PcGamer25/client-database-app/assets/24723469/8750e78c-f9e1-489a-b861-046a93d71f9d">
