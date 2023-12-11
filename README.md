@@ -1,5 +1,5 @@
 # Client Database App
-client-database-app is an appointment scheduling program built using JavaFX that manages appointments, customers, and generates reports. It is to be connected to a MySQL database through the Java Database Connectivity API where customer and appointment data is stored.
+client-database-app is an appointment scheduling program built using JavaFX that manages appointments, customers, and generates reports. It uses the Java Database Connectivity API to connect to a MySQL database where customer and appointment data is stored.
 ## Features
 ### Login Form
 <img width="452" alt="login" src="https://github.com/PcGamer25/client-database-app/assets/24723469/8750e78c-f9e1-489a-b861-046a93d71f9d">
@@ -8,7 +8,7 @@ client-database-app is an appointment scheduling program built using JavaFX that
 - Determines the user’s location and displays it on the form
 - Displays the form in English or French based on the user’s computer language setting
 - Translates error messages into English or French based on the user’s computer language setting
-- Records all user logins and login attempts with timestamps in login_activity.txt
+- Records all user logins and login attempts with timestamps in `login_activity.txt`
 ### Appointment Reminder
 <img width="272" alt="appointmentspopup" src="https://github.com/PcGamer25/client-database-app/assets/24723469/0953dab0-d26e-4cfb-a881-3d3874c89d32">
 
@@ -21,7 +21,7 @@ client-database-app is an appointment scheduling program built using JavaFX that
 ### Appointments
 <img width="452" alt="appointments" src="https://github.com/PcGamer25/client-database-app/assets/24723469/62014ee0-0ec2-420d-9af5-3577a660158f">
 
-- Displays all current appointments in a table in the current time zone
+- Displays all appointments in a table in the current time zone
 - Allows adding, updating, and deleting appointments
 - Enables the user to filter appointments by month or week
 ### Add/Edit Appointments
