@@ -27,7 +27,7 @@ client-database-app is an appointment scheduling program built using JavaFX that
 ### Add/Edit Appointments
 <img width="452" alt="addappointment" src="https://github.com/PcGamer25/client-database-app/assets/24723469/50b5f0d0-18d4-4ee2-be87-a874ce3f05c6">
 
-- Performs input validation and blank field checks and generates an error message
+- Performs input validation and blank field checks and generates an error message accordingly
 - Prevents scheduling an appointment outside of business hours (currently defined as 8:00 a.m. to 10:00 p.m. ET including weekends)
 - Prevents scheduling an overlapping appointment for customers
 - Auto-populates the form when modifying an appointment
@@ -40,7 +40,7 @@ client-database-app is an appointment scheduling program built using JavaFX that
 ### Add/Edit Customers
 <img width="452" alt="addcustomer" src="https://github.com/PcGamer25/client-database-app/assets/24723469/c5d0bcac-824b-4e70-b124-6d63fb7c6773">
 
-- Performs input validation and blank field checks and generates an error message
+- Performs input validation and blank field checks and generates an error message accordingly
 - Auto-populates the form when modifying a customer
 ### Reports
 <img width="452" alt="reports" src="https://github.com/PcGamer25/client-database-app/assets/24723469/57d482e3-4fdc-498a-8d9d-bb9ee1178e02">
